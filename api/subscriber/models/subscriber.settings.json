@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscribers",
+  "info": {
+    "name": "Subscriber",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "isOptOut": {
+      "type": "boolean",
+      "default": false
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}
